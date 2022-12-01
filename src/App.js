@@ -1,35 +1,35 @@
 import React from "react";
 
-import NewUser from "./NewUser";
-import NewTable from "./NewTable";
+import "./App.css";
+
+import Modal9 from "./Modal9.js";
+import Modal10 from "./Modal10";
+import { Button } from "react-bootstrap";
 
 function App() {
+  const [modal9Show, setModal9Show] = React.useState(false);
+  const [modal10Show, setModal10Show] = React.useState(false);
+
   return (
     <div className="App">
-      <button
-        type="button"
-        className="btn btn-primary m-5"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal"
-        data-bs-whatever="@mdo"
-      >
-        User Profile Modal
-      </button>
-      <button
-        type="button"
-        className="btn btn-primary m-5"
-        data-bs-toggle="modal"
-        data-bs-target="#exampleModal2"
-        data-bs-whatever="@fat"
-      >
-        Open modal for 2
-      </button>
+      {/* Modal 9 with its Button */}
+      <Modal9 show={modal9Show} onHide={() => setModal9Show(false)} />
+      <Button variant="primary" onClick={() => setModal9Show(true)}>
+        modal 9
+      </Button>
 
-      {/* New User Modal */}
+      {/* Modal 9 with its Button */}
+
+      <Button variant="primary" onClick={() => setModal10Show(true)}>
+        Modal10
+      </Button>
+      <Modal10 show={modal10Show} onHide={() => setModal10Show(false)} />
+
+      {/* New User Modal 
       <NewUser />
 
-      {/* New Table Modal */}
-      <NewTable />
+       New Table Modal 
+      <NewTable /> */}
     </div>
   );
 }

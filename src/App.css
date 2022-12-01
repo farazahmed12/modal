@@ -1,0 +1,7 @@
+.modal-lg{
+    max-width: 500px !important;
+}
+.modal-content{
+    border-radius: 16px !important;
+    padding: 1rem;
+}
