@@ -1,0 +1,23 @@
+.main__heading{
+    display: flex;
+    justify-content: center;
+    color: #484b51;
+    margin: 15px 0;
+
+}
+.main__paragraph{
+    text-align: center;
+    color: #484b51;
+    font-weight: 600;
+    margin: 15px 0;
+}
+
+.row__input{
+    margin: 10px 0;
+}
+
+.text__bold{
+    font-weight: bold;
+    color: #484b51;
+
+}
